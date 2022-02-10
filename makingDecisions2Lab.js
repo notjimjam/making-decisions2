@@ -23,7 +23,7 @@ var firstItem = arr[0]
 
 //Code Here
 
-// arr.pop();
+let lastItemRemoved = arr.pop();
 
 // console.log(arr);
 
@@ -41,9 +41,9 @@ var family = ['Tyler', 'Jordan', 'Ryan', 'Alice', 'Ireland'];
 
 // console.log(family)
 
-// for(let i = 0; i < family.length; i++) {
-//   console.log(family[i]);
-// }
+for(let i = 0; i < family.length; i++) {
+  console.log(family[i]);
+}
 
 ////////// PROBLEM 4 //////////
 
@@ -59,12 +59,12 @@ let evensArr = []
 
 //Code Here
 
-// for(let i = 0; i < nums.length; i++) {
-//   if (nums[i] % 2 === 0) {
-//     evensArr.push(nums[i])
-//   }
-// }
-// console.log(evensArr);
+for(let i = 0; i < nums.length; i++) {
+  if (nums[i] % 2 === 0) {
+    evensArr.push(nums[i])
+  }
+}
+console.log(evensArr);
 
 
 ////////// PROBLEM 5 //////////
@@ -82,24 +82,24 @@ var score = 74
 */
 
 //Code Here
-// if (score >= 90) {
-//   console.log("A")
-// } else if (score >= 80) {
-//   console.log("B")
-// } else if (score >= 70) {
-//   console.log("C")
-// } else if (score >= 60) {
-//   console.log("D")
-// } else {
-//   console.log ("F")
-// }
+if (score >= 90) {
+  console.log("A")
+} else if (score >= 80) {
+  console.log("B")
+} else if (score >= 70) {
+  console.log("C")
+} else if (score >= 60) {
+  console.log("D")
+} else {
+  console.log ("F")
+}
 
 ////////// Intermediate Problems //////////
 
 ////////// PROBLEM 6 //////////
 
 // Do not edit the code below.
-var myFavoriteNumbers = [4,8,12,16,20,24,28,32,36,40];
+var myFavoriteNumbers = [4,8,12,16,20,24,];
 // Do not edit the code above.
 
 /*
@@ -108,9 +108,9 @@ var myFavoriteNumbers = [4,8,12,16,20,24,28,32,36,40];
 */
 
 //Code Here
-// let someNum = myFavoriteNumbers[4]
+let someNum = myFavoriteNumbers[4]
 
-// console.log(someNum)
+console.log(someNum)
 
 ////////// PROBLEM 7 //////////
 
@@ -129,12 +129,20 @@ var myFavoriteNumbers = [4,8,12,16,20,24,28,32,36,40];
 // for(let i = 0; i < myFavoriteNumbers.length; i++) {
 // if (myFavoriteNumbers.length < 7) {
 //     console.log("There are not enough elements in this array")
+
 //   } else if (myFavoriteNumbers.length >= 7) {
 //     someNum = (myFavoriteNumbers[6])
 //   }
 // }
 // console.log(someNum)
+// above code is incorrect for the solution
+// Did not need a for loop for the solution
 
+if(myFavoriteNumbers.length < 7) {
+  console.log("There are not enough elements in this array")
+} else {
+  someNum = myFavoriteNumbers[6]
+}
 
 ////////// PROBLEM 8 //////////
 
@@ -147,16 +155,16 @@ var listOfNumbers = [1,2,3,4,5,6,7,8,9,10,11,12];
 
 //Code Here
 
-// for (let i = 0; i < listOfNumbers.length; i++) {
-//   if(listOfNumbers[i] % 3 === 0) {
-//     console.log(`${listOfNumbers[i]} is divisible by 3`)
+for (let i = 0; i < listOfNumbers.length; i++) {
+  if(listOfNumbers[i] % 3 === 0) {
+    console.log(`${listOfNumbers[i]} is divisible by 3`)
+  }
+
+}
+//   } else {
+//     console.log (listOfNumbers[i])
 //   }
-
-
-  // } else {
-  //   console.log (listOfNumbers[i])
-  // }
-//}
+// }
 
 ////////// PROBLEM 9 //////////
 // Do not edit the code below.
@@ -168,9 +176,9 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
 */
 
 //Code Here
-// for(let i = letters.length -1; i >= 0; i--) {
-//   console.log(letters[i])
-// }
+for(let i = letters.length -1; i >= 0; i--) {
+  console.log(letters[i])
+}
 
 ////////// Advanced Problems //////////
 
@@ -216,7 +224,10 @@ switch(letterGrade) {
 
 ////////// PROBLEM 11 //////////
 /* The famous FizzBuzz, Devmountain style!
-  Create a for loop that iterates from 1 to 100. In this for loop, using some conditional logic, if the number your for loop is currently on is divisible by 3, console.log 'Dev'. If the number is divisible by 5, console.log 'mountain'. If the number is divisible by 5 & 3, console.log 'Devmountain'. If the number is not divisible by 5 or 3, console.log the number itself. Hint: Look up the modulo operator.
+  Create a for loop that iterates from 1 to 100. In this for loop, using some conditional logic, 
+  if the number your for loop is currently on is divisible by 3, console.log 'Dev'. 
+  If the number is divisible by 5, console.log 'mountain'. If the number is divisible by 5 & 3, 
+  console.log 'Devmountain'. If the number is not divisible by 5 or 3, console.log the number itself. Hint: Look up the modulo operator.
 
   Your output should look like:
   1
@@ -239,3 +250,14 @@ switch(letterGrade) {
 */
 
 //Code Here
+for (let i = 1; i <= 100; i++){
+  if (i % 15 === 0) {
+    console.log("DevMountain")
+  } else if(i % 3 === 0) {
+    console.log("Dev")
+  } else if(i % 5 === 0) {
+    console.log("Mountain")
+  } else {
+    console.log(i)
+  }
+}
