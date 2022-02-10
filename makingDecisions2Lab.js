@@ -60,8 +60,11 @@ let evensArr = []
 //Code Here
 
 for(let i = 0; i < nums.length; i++) {
-  console.log(nums[i])
+  if (nums[i] % 2 === 0) {
+    evensArr.push(nums[i])
+  }
 }
+console.log(evensArr);
 
 
 ////////// PROBLEM 5 //////////
@@ -105,9 +108,9 @@ var myFavoriteNumbers = [4,8,12,16,20,24];
 */
 
 //Code Here
-// someNum = myFavoriteNumbers[4]
+let someNum = myFavoriteNumbers[4]
 
-// console.log(someNum)
+console.log(someNum)
 
 ////////// PROBLEM 7 //////////
 
@@ -123,6 +126,13 @@ var myFavoriteNumbers = [4,8,12,16,20,24];
 //   exactly 7 elements? What index do you use to get the 7th element?)
 
 //Code Here
+// for( let i = 0; i < myFavoriteNumbers.length; i++) {
+//   if (myFavoriteNumbers[i] < 7) {
+//     console.log("There are not enough elements in this array")
+//   } else if(myFavoriteNumbers[i] > 7) {
+//     someNums = 7
+//   }
+//   }
 
 
 ////////// PROBLEM 8 //////////
@@ -131,10 +141,18 @@ var myFavoriteNumbers = [4,8,12,16,20,24];
 var listOfNumbers = [1,2,3,4,5,6,7,8,9,10,11,12];
 // Do not edit the code above.
 
-// Use a for-loop to iterate through 'listOfNumbers', checking to see if each number is divisible by 3. If it is, console.log '{number} is divisible by 3.'
+// Use a for-loop to iterate through 'listOfNumbers', checking to see if each number is divisible by 3. 
+// If it is, console.log '{number} is divisible by 3.'
 
 //Code Here
 
+for (let i = listOfNumbers[0]; i < listOfNumbers.length; i++) {
+  if(i % 3 === 0) {
+    console.log("is divisible by 3")
+  } else {
+    console.log (listOfNumbers[i])
+  }
+}
 
 ////////// PROBLEM 9 //////////
 // Do not edit the code below.
