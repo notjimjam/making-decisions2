@@ -99,7 +99,7 @@ var score = 74
 ////////// PROBLEM 6 //////////
 
 // Do not edit the code below.
-var myFavoriteNumbers = [4,8,12,16,20,24];
+var myFavoriteNumbers = [4,8,12,16,20,24,28,32,36,40];
 // Do not edit the code above.
 
 /*
@@ -126,13 +126,13 @@ var myFavoriteNumbers = [4,8,12,16,20,24];
 //   exactly 7 elements? What index do you use to get the 7th element?)
 
 //Code Here
-// for( let i = 0; i < myFavoriteNumbers.length; i++) {
-//   if (myFavoriteNumbers[i] < 7) {
+// for(let i = 0; i < myFavoriteNumbers.length; i++) {
+// if (myFavoriteNumbers.length < 7) {
 //     console.log("There are not enough elements in this array")
-//   } else if(myFavoriteNumbers[i] > 7) {
-//     someNums = 7
+//   } else if (myFavoriteNumbers.length >= 7) {
+//     someNum = (myFavoriteNumbers[6])
 //   }
-//   }
+// console.log(someNum)
 
 
 ////////// PROBLEM 8 //////////
@@ -164,9 +164,9 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
 */
 
 //Code Here
-for(let i = letters.length -1; i >= 0; i--) {
-  console.log(letters[i])
-}
+// for(let i = letters.length -1; i >= 0; i--) {
+//   console.log(letters[i])
+// }
 
 ////////// Advanced Problems //////////
 
