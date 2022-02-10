@@ -59,12 +59,12 @@ let evensArr = []
 
 //Code Here
 
-for(let i = 0; i < nums.length; i++) {
-  if (nums[i] % 2 === 0) {
-    evensArr.push(nums[i])
-  }
-}
-console.log(evensArr);
+// for(let i = 0; i < nums.length; i++) {
+//   if (nums[i] % 2 === 0) {
+//     evensArr.push(nums[i])
+//   }
+// }
+// console.log(evensArr);
 
 
 ////////// PROBLEM 5 //////////
@@ -108,9 +108,9 @@ var myFavoriteNumbers = [4,8,12,16,20,24];
 */
 
 //Code Here
-let someNum = myFavoriteNumbers[4]
+// let someNum = myFavoriteNumbers[4]
 
-console.log(someNum)
+// console.log(someNum)
 
 ////////// PROBLEM 7 //////////
 
@@ -146,13 +146,13 @@ var listOfNumbers = [1,2,3,4,5,6,7,8,9,10,11,12];
 
 //Code Here
 
-for (let i = listOfNumbers[0]; i < listOfNumbers.length; i++) {
-  if(i % 3 === 0) {
-    console.log("is divisible by 3")
-  } else {
-    console.log (listOfNumbers[i])
-  }
-}
+// for (let i = 0; i < listOfNumbers.length; i++) {
+//   if(listOfNumbers[i] % 3 === 0) {
+//     console.log(`${listOfNumbers[i]} is divisible by 3`)
+//   } else {
+//     console.log (listOfNumbers[i])
+//   }
+// }
 
 ////////// PROBLEM 9 //////////
 // Do not edit the code below.
@@ -164,7 +164,9 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
 */
 
 //Code Here
-
+for(let i = letters.length -1; i >= 0; i--) {
+  console.log(letters[i])
+}
 
 ////////// Advanced Problems //////////
 
