@@ -132,6 +132,7 @@ var myFavoriteNumbers = [4,8,12,16,20,24,28,32,36,40];
 //   } else if (myFavoriteNumbers.length >= 7) {
 //     someNum = (myFavoriteNumbers[6])
 //   }
+// }
 // console.log(someNum)
 
 
@@ -174,7 +175,8 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
 ////////// Advanced Problems //////////
 
 ////////// PROBLEM 10 //////////
-// Switch statements can be excellent alternatives to if blocks. Look up switch statements (I recommend W3 Schools) and try to implement one for the following.
+// Switch statements can be excellent alternatives to if blocks. 
+// Look up switch statements (I recommend W3 Schools) and try to implement one for the following.
 
 // Do not edit the code below.
 let letterGrade = 'B'
